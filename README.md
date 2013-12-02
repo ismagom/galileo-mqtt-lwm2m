@@ -39,15 +39,16 @@ Instructions
    e) EXEC Run
 8) Run the mqtt-galileo-panel and see the MQTT message update the web interface. 
 
+System Diagram
+===============
+
+This is how the whole system looks like:
+
+![diagram](https://raw.github.com/ismagom/galileo-mqtt-lwm2m/master/system_setup.png)
+
 Contact
 =======
 
 For any help, comments or suggestion: gomezi@tcd.ie
 
 
-
-
-
-
-
-![diagram](https://raw.github.com/ismagom/galileo-mqtt-lwm2m/master/system_setup.png)
