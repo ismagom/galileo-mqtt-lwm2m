@@ -26,18 +26,31 @@ Instructions
 
 
 1) Compile all required programs. The LWM2M and MQTT clients must be compiled in the Galileo board. 
+
 2) Setup the TFTP server in the host. 
+
 3) Copy the test binary from the MQTT client to the TFTP server home directory.
+
 4) Run leshan server
+
 5) Run LWM2M client in the Galileo board, indicate IPv6 address of the leshan server. You should see in the client console how it connects to the server. 
+
 6) In a browser, open http://127.0.0.1:8080/ (or the leshan server address). 
+
 7) Click on the client. In the Objects list, find the Application object and set:
+
    a) WRITE to name: "test"
+   
    b) WRITE to URL: "tftp://ip.of.tftp.server/test" 
+   
    c) EXEC Download
+   
    d) WRITE to args: "ip.of.mqtt.broker"
+   
    e) EXEC Run
+   
 8) Run the mqtt-galileo-panel and see the MQTT message update the web interface. 
+
 
 System Diagram
 ===============
